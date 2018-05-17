@@ -1,0 +1,134 @@
+  
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+height: 100%;
+width: 100%;
+background-color: rgb(250, 250, 250);
+font-family: Arial, Helvetica, sans-serif
+}
+
+.masterCont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headerCont {
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerContLeft,
+.footerContLeft {
+    width: 10%;
+    height: 100%;
+}
+
+.headerContMiddle {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerContMiddle {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.headerContMiddle img,
+.footerContMiddle img {
+    width: 100%;
+}
+
+.headerContRight,
+.footerContRight {
+    width: 10%;
+    height: 100%;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.mainImageCont {
+    height: 450px;
+    width: 500px;
+    position: absolute;
+    top: 160px;
+    left: 330px;
+    border: .5px solid rgb(217, 217, 217);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; *3
+}
+.imageSideBar {
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+    width: 350px;
+    position: absolute;
+    top: 160px;
+    right: 335px;
+    border-top: .5px solid rgb(217, 217, 217);
+    border-right: .5px solid rgb(217, 217, 217);
+    border-bottom: .5px solid rgb(217, 217, 217);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumbs {
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+.thumbs:hover {
+    box-shadow: 0 0 2px 1px rgb(153, 204, 255)
+}
+
+.footerCont {
+    background-color: rgb(250, 250, 250);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /* 480px
+    640px
+    768px
+    1024px
+    1200px */
+
+@media only screen and (min-width: xxxxpx) {
+    
+}
