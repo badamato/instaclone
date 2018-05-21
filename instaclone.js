@@ -1,24 +1,32 @@
-var katImages = "[data-kat]";
-var imagesFrame = "[data-target]";
-var overlayFrame = "[data-mynav]";
+var THUMB_IMG = "[data-indiv-img]";
+var MAIN_IMG = "[data-target-main]";  
+var MY_MODAL = "[data-myModal]";
+var IMG_01 = "[data-img01]";
+var CAPTION = "[data-caption]";
 
 
-var navItems = document.querySelectorAll(katImages);
-var imgTarget = document.querySelector(imagesFrame);
-var overlay = document.querySelector(overlayFrame);
+var navItems = document.querySelectorAll(THUMB_IMG);
+var imgTarget = document.querySelector(MAIN_IMG);
+var modal = document.querySelector(MY_MODAL);
+var modalImg = document.querySelector(IMG_01);
+var captionText = document.querySelector(CAPTION);
+var span = document.getElementsByClassName("close")[0];
+
 
 
 navItems.forEach(function (nav) {
-  nav.addEventListener('click', function (event) {
+  nav.addEventListener("click", function (event) {
     event.preventDefault();
-    imgTarget.setAttribute('src', nav.getAttribute('href'));
+    imgTarget.setAttribute("src", nav.getAttribute("href"));
   })
 });
 
-function openOverlay() {
-  overlay.style.display = "block";
+imgTarget.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
 }
 
-function closeOverlay() {
-  overlay.style.display = "none";
+span.onclick = function() { 
+    modal.style.display = "none";
 }

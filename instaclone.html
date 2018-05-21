@@ -11,54 +11,77 @@
     <title>Instagram Clone Project</title>
 </head>
 <body>
-    <div class = "masterCont">
 
         <header class="headerCont">
-            <div class="headerContLeft"></div>
-            <div class="headerContMiddle">            
-                <img src="images/headertool.png" alt="">
+            <div class="headerSpaceLeft">
+                <a href="#"><img src="images/islogo.png" alt=""></a>
             </div>
-            <div class="headerContRight"></div>
+            <div class="headerSpaceMiddle">            
+                <input type="text" class="searchTerm" placeholder="Search">
+                <input type="submit" class="searchButton">
+            </div>
+            <div class="headerSpaceRight">
+                <ul>
+                    <li><a href="#"><img src="images/compass.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/heart.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/person.png" alt=""></a></li>
+                </ul>
+            </div>
         </header>
 
-        <div>
-            <div class="mainImageCont">
-                <div class="mainImageItem">
-                    <img data-target src="images/meerkat_mom.jpg" alt="">
+
+        <div class="mainImageCont">
+                <div class="lgImageCont">
+                        <a href="#"><img data-target-main src="images/meerkat_mom.jpg" alt="get outta my way, YOU!"></a>
+                </div>
+                <div data-myModal class="modal">
+                    <span class="close">×</span>
+                    <img data-img01 class="modalContent">
+                    <div data-caption class="caption"></div>
+                </div>
+
+
+            <div class="thumbCont">
+                <div class="thumbItem">
+                    <a data-indiv-img href="images/meerkat_mom.jpg"><img src="images/meerkat_mom.jpg" alt="get outta my way, YOU!"></a>
+                </div>
+                <div class="thumbItem">
+                    <a data-indiv-img href="images/meerkat_rocks.jpg"><img src="images/meerkat_rocks.jpg" alt="dude, they can't see us"></a>
+                </div>
+                <div class="thumbItem">
+                    <a data-indiv-img href="images/meerkat_fam.jpg"><img src="images/meerkat_fam.jpg" alt="why are your ears dirty"></a>
+                </div>
+                <div class="thumbItem">
+                    <a data-indiv-img href="images/meerkat_lounging.jpg"><img src="images/meerkat_lounging.jpg" alt="BUUUUUUURP!"></a>
+                </div>
+                <div class="thumbItem">
+                    <a data-indiv-img href="images/meerkat_group.jpg"><img src="images/meerkat_group.jpg" alt="and we're SMILING!"></a>
+                </div>
+                <div class="thumbItem">
+                    <a data-indiv-img href="images/meerkat_pose.jpg"><img src="images/meerkat_pose.jpg" alt="THIS...is a meerkat"></a>
                 </div>
             </div>
-            <div class="imageSideBar">
-                <a data-kat class="thumbs" href="images/meerkat_mom.jpg"><img src="images/meerkat_mom.jpg" alt=""></a>
-                <a data-kat class="thumbs" href="images/meerkat_rocks.jpg"><img src="images/meerkat_rocks.jpg" alt=""></a>
-                <a data-kat class="thumbs" href="images/meerkat_fam.jpg"><img src="images/meerkat_fam.jpg" alt=""></a>
-                <a data-kat class="thumbs" href="images/meerkat_lounging.jpg"><img src="images/meerkat_lounging.jpg" alt=""></a>
-                <a data-kat class="thumbs" href="images/meerkat_group.jpg"><img src="images/meerkat_group.jpg" alt=""></a>
-                <a data-kat class="thumbs" href="images/meerkat_pose.jpg"><img src="images/meerkat_pose.jpg" alt=""></a>
-            </div>
         </div>
-
-        <div data-mynav class="overlay">
-            <!-- close button -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
-
-            <!-- overlay content -->
-            <div class="overlay-content">
-                <a href="https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp" target="_blank">A CONTENT LINK FOR THE OVERLAY</a></h2>
-            </div>
-        </div>
-
-        <span onClick="openOverlay()">OPEN</span>
 
         <footer class="footerCont">
-            <div class="footerContLeft"></div>
-            <div class="footerContMiddle">            
-                <img src="images/footertool.png" alt="">
+            <div>
+                <ul class="footerMenu">
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">SUPPORT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">PRESS</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">JOBS</a></li>
+                    <li><a href="#">PRIVACY</a></li>
+                    <li><a href="#">TERMS</a></li>
+                    <li><a href="#">DIRECTORY</a></li>
+                    <li><a href="#">PROFILES</a></li>
+                    <li><a href="#">HASHTAGS</a></li>
+                    <li><a href="#">LANGUAGE</a></li>
+                </ul>
             </div>
-            <div class="footerContRight"></div>
         </footer>
 
-    </div>    
-    
     <script src="instaclone.js"></script>
 </body>
 </html>
