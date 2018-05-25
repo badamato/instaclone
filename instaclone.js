@@ -18,6 +18,9 @@ navItems.forEach(function (nav) {
   nav.addEventListener("click", function (event) {
     event.preventDefault();
     imgTarget.setAttribute("src", nav.getAttribute("href"));
+
+    var imageInside = nav.querySelector("img");
+    imgTarget.setAttribute("alt", imageInside.getAttribute("alt"))
   })
 });
 
